@@ -1,0 +1,25 @@
+﻿生成启动时间为 2017/11/5 16:53:49。
+     1>项目“C:\code\pond2\pond2\pond2.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\pond2.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt pond2.cpp
+         pond2.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\code\pond2\Debug\pond2.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\code\pond2\lib CppRtu70.lib DCAlib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\pond2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\code\pond2\Debug\pond2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\code\pond2\Debug\pond2.lib" /MACHINE:X86 Debug\calc.obj
+         Debug\config.obj
+         Debug\dcafile.obj
+         Debug\pond2.obj
+         Debug\signal.obj
+         Debug\summary.obj
+         pond2.vcxproj -> C:\code\pond2\Debug\pond2.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"C:\code\pond2\Debug\pond2.exe.manifest" /manifest Debug\pond2.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\pond2.unsuccessfulbuild”。
+         正在对“Debug\pond2.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\code\pond2\pond2\pond2.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.61
