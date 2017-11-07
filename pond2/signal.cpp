@@ -20,6 +20,12 @@ const char* get_sig_name(int line, const char* part)
         if(!strcmp(part, "thick_ct")){
             return "TN\\L2_AGC_F7XTHKCDEVCLG";
         }
+        if(!strcmp(part, "wedge_40")){
+            return "PR\\FM_DEL_WEDGE40";
+        }
+        if(!strcmp(part, "crown_40")){
+            return "PR\\FM_DEL_CROWN40";
+        }
     }
     if(line == 2250){
         if(!strcmp(part, "thick_ct")){

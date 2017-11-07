@@ -21,6 +21,12 @@ const char* get_dca_name(int line, const char* part)
         if(!strcmp(part, "thick_ct")){
             return "CLG";
         }
+        if(!strcmp(part, "wedge_40")){
+            return "MFG";
+        }
+        if(!strcmp(part, "crown_40")){
+            return "MFG";
+        }
     }
     if(line == 2250){
         if(!strcmp(part, "thick_ct")){

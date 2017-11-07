@@ -15,9 +15,11 @@ using namespace std;
 int main(int argc, char* argv[])
 {
 	// --- IO position ---
-	string coil_list = "c:/work/pond/data_inter.txt";
-	string result = "c:/work/pond/output.csv";
+	//string coil_list = "e:/data_inter/yh_data_inter.txt";
+	string coil_list = "e:/silicon_fb/20171106/data_inter.txt";
 
+	//string result = "e:/data_out/20171106_yh_data.csv";
+	string result = "e:/silicon_fb/20171106/data_output2.csv";
 	// setup data(1580 or 2250)
 	int mill_line = 1580;
 
@@ -31,7 +33,7 @@ int main(int argc, char* argv[])
 	string coil;
 
 	// while statement
-	while (!infile.eof())
+	while(getline(infile,coil))
 	{
 		//info print
 		cout << coil << endl;
@@ -40,9 +42,11 @@ int main(int argc, char* argv[])
 		coil_id(coil, outfile);
 		
 		// normal procedure
-		getline(infile,coil);
-		get_pond_1(coil, "thick", "thick_ct","all", "total",0,0,0,0,"IKI", outfile);
+		/*getline(infile,coil);*/
 
+		// different demand
+		//get_pond(coil, "thick", "thick_ct","all", "total",0,0,0,0,"IKI", outfile);
+		get_pond(coil, "wedge", "wedge_40","all", "total",0,0,0,0,"wedge", outfile);
 		// build columns
 		if(!init_flag)
 		{	

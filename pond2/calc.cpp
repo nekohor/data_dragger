@@ -104,7 +104,7 @@ string calc_all(ValueData* pData, int start, int end){
 	stringstream stream;
 	for(int i = start; i < end; i++){
 		stream << pData[i].data;
-		stream << "|";
+		stream << ",";
 	}
 	string value = stream.str();
 	return value;
@@ -237,6 +237,7 @@ string along_stat(string dca_name,string signal_name,
 		ReadDCA(dca_name.c_str(), signal_name.c_str(), pData, &num);
 		seg_select(num, segment, head_len, tail_len, start, end);
 		cout << "start:"<< start << " --- end:"<< end << endl;
+		cout << " --- num:" << num << endl;
 		calculate(stat, pData, start, end, upper, lower, out);
 		delete [] pData;
 		//cout << out;

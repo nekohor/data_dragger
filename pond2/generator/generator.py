@@ -10,7 +10,7 @@ import docx   # 注意是python-docx
 from docx.shared import Inches
 import re
 import asyncio
-import aiofiles
+
 matplotlib.style.use('ggplot')
 
 
