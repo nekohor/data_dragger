@@ -18,8 +18,14 @@ void get_dcafile(int line,
 const char* get_dca_name(int line, const char* part)
 {
     if(line == 1580){
-        if(!strcmp(part, "thick_ct")){
+        if(!strcmp(part, "thick_clg")){
             return "CLG";
+        }
+        if(!strcmp(part, "width_flt")){
+            return "FLT";
+        }
+        if(!strcmp(part, "width_mfg")){
+            return "MFG";
         }
         if(!strcmp(part, "wedge_40")){
             return "MFG";
@@ -27,10 +33,94 @@ const char* get_dca_name(int line, const char* part)
         if(!strcmp(part, "crown_40")){
             return "MFG";
         }
+        if(!strcmp(part, "shift_f1")){
+            return "F1";
+        }
+        if(!strcmp(part, "shift_f2")){
+            return "F2";
+        }
+        if(!strcmp(part, "shift_f3")){
+            return "F3";
+        }
+        if(!strcmp(part, "shift_f4")){
+            return "F4";
+        }
+        if(!strcmp(part, "shift_f5")){
+            return "F5";
+        }
+        if(!strcmp(part, "shift_f6")){
+            return "F6";
+        }
+        if(!strcmp(part, "shift_f7")){
+            return "F7";
+        }
+        if(!strcmp(part, "flt_ro1")){
+            return "FLT";
+        }
+        if(!strcmp(part, "flt_ro2")){
+            return "FLT";
+        }
+        if(!strcmp(part, "flt_ro3")){
+            return "FLT";
+        }
+        if(!strcmp(part, "flt_ro4")){
+            return "FLT";
+        }
+        if(!strcmp(part, "flt_ro5")){
+            return "FLT";
+        }
     }
     if(line == 2250){
-        if(!strcmp(part, "thick_ct")){
+        if(!strcmp(part, "thick_clg")){
             return "CLG";
+        }
+        if(!strcmp(part, "width_flt")){
+            return "FLT";
+        }
+        if(!strcmp(part, "width_mfg")){
+            return "MFG";
+        }
+        if(!strcmp(part, "wedge_40")){
+            return "MFG";
+        }
+        if(!strcmp(part, "crown_40")){
+            return "MFG";
+        }
+        if(!strcmp(part, "shift_f1")){
+            return "F1";
+        }
+        if(!strcmp(part, "shift_f2")){
+            return "F2";
+        }
+        if(!strcmp(part, "shift_f3")){
+            return "F3";
+        }
+        if(!strcmp(part, "shift_f4")){
+            return "F4";
+        }
+        if(!strcmp(part, "shift_f5")){
+            return "F5";
+        }
+        if(!strcmp(part, "shift_f6")){
+            return "F6";
+        }
+        if(!strcmp(part, "shift_f7")){
+            return "F7";
+        }
+        if(!strcmp(part, "flt_ro1")){
+            return "FLT";
+        }
+        if(!strcmp(part, "flt_ro2")){
+            return "FLT";
+        }
+        if(!strcmp(part, "flt_ro3")){
+            return "FLT";
+        }
+        if(!strcmp(part, "flt_ro4")){
+            return "FLT";
+        }
+        if(!strcmp(part, "flt_ro5")){
+            return "FLT";
         }
     }
     cerr << "Nothing meet dcafile name" << endl;
