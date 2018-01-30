@@ -69,6 +69,27 @@ const char* get_dca_name(int line, const char* part)
         if(!strcmp(part, "flt_ro5")){
             return "FLT";
         }
+        if(!strcmp(part, "looper_angle1")){
+            return "F1";
+        }
+        if(!strcmp(part, "looper_angle2")){
+            return "F2";
+        }
+        if(!strcmp(part, "looper_angle3")){
+            return "F3";
+        }
+        if(!strcmp(part, "looper_angle4")){
+            return "F4";
+        }
+        if(!strcmp(part, "looper_angle5")){
+            return "F5";
+        }
+        if(!strcmp(part, "looper_angle6")){
+            return "F6";
+        }
+        if(!strcmp(part, "r2dt")){
+            return "R2DT";
+        }
     }
     if(line == 2250){
         if(!strcmp(part, "thick_clg")){
@@ -121,6 +142,27 @@ const char* get_dca_name(int line, const char* part)
         }
         if(!strcmp(part, "flt_ro5")){
             return "FLT";
+        }
+        if(!strcmp(part, "looper_angle1")){
+            return "F1";
+        }
+        if(!strcmp(part, "looper_angle2")){
+            return "F2";
+        }
+        if(!strcmp(part, "looper_angle3")){
+            return "F3";
+        }
+        if(!strcmp(part, "looper_angle4")){
+            return "F4";
+        }
+        if(!strcmp(part, "looper_angle5")){
+            return "F5";
+        }
+        if(!strcmp(part, "looper_angle6")){
+            return "F6";
+        }
+        if(!strcmp(part, "r2dt")){
+            return "R2DT";
         }
     }
     cerr << "Nothing meet dcafile name" << endl;

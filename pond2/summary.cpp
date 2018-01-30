@@ -24,19 +24,20 @@ void coil_id(string& coil,ofstream &outfile){
 	cout << coilname << ",";
 	outfile << coilname << ",";
 	//string get_millline_head = coilname.substr(0,1);
-	header = "ÈÈ¾íºÅ,";
+	header = "ÈÈ¾íºÅ";
 	cout << get_line() << "line" << endl;
 }
 
 void output(string& result, ofstream &outfile, const char* head){
 	cout << result;
 	outfile << result;
+	header += ",";
 	header += head;
 }
 
 void get_pond(string& coil, const char* item, const char* part,
 		const char* stat, const char* segment,
-		int head_len, int tail_len, int lower, int upper,
+		int head_len, int tail_len, double lower, double upper,
 		const char* head, ofstream &outfile){
 		string dca_name;string signal_name;string result;
 		get_dcafile(get_line(), part, coil, dca_name);

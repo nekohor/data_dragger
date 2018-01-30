@@ -5,7 +5,7 @@ void coil_id(string& coil,ofstream &outfile);
 
 void get_pond(string& coil, const char* item, const char* part,
 	const char* stat, const char* segment,
-	int head_len, int tail_len, int lower, int upper,
+	int head_len, int tail_len, double lower, double upper,
 	const char* head, ofstream &outfile
 	);
 

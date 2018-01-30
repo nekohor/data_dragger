@@ -68,6 +68,27 @@ const char* get_sig_name(int line, const char* part)
         if(!strcmp(part, "flt_ro5")){
             return "TN\\L2_CF_F7XFLTRO5";
         }
+        if(!strcmp(part, "looper_angle1")){
+            return "TN\\L2_F1H_L1ANGFB";
+        }
+        if(!strcmp(part, "looper_angle2")){
+            return "TN\\L2_F2H_L2ANGFB";
+        }
+        if(!strcmp(part, "looper_angle3")){
+            return "TN\\L2_F3H_L3ANGFB";
+        }
+        if(!strcmp(part, "looper_angle4")){
+            return "TN\\L2_F4H_L4ANGFB";
+        }
+        if(!strcmp(part, "looper_angle5")){
+            return "TN\\L2_F5H_L5ANGFB";
+        }
+        if(!strcmp(part, "looper_angle6")){
+            return "TN\\L2_F6H_L6ANGFB";
+        }
+        if(!strcmp(part, "r2dt")){
+            return "TN\\L2_R2_R2DTTEMP";
+        }
     }
     if(line == 2250){
         if(!strcmp(part, "thick_clg")){
@@ -120,6 +141,27 @@ const char* get_sig_name(int line, const char* part)
         }
         if(!strcmp(part, "flt_ro5")){
             return "TN\\L_CF_F7XFLTRO5";
+        }
+        if(!strcmp(part, "looper_angle1")){
+            return "TN\\L_F1LP_ANGFB";
+        }
+        if(!strcmp(part, "looper_angle2")){
+            return "TN\\L_F2LP_ANGFB";
+        }
+        if(!strcmp(part, "looper_angle3")){
+            return "TN\\L_F3LP_ANGFB";
+        }
+        if(!strcmp(part, "looper_angle4")){
+            return "TN\\L_F4LP_ANGFB";
+        }
+        if(!strcmp(part, "looper_angle5")){
+            return "TN\\L_F5LP_ANGFB";
+        }
+        if(!strcmp(part, "looper_angle6")){
+            return "TN\\L_F6LP_ANGFB";
+        }
+        if(!strcmp(part, "r2dt")){
+            return "TN\\L_R2_R2DT1TEMP";
         }
     }
     cerr << "Nothing meet signal name" << endl;

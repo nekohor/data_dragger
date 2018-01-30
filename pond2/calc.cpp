@@ -21,7 +21,7 @@ static float min(float a,float b){
 }
 
 ///////normal function///////
-string calc_aimrate(ValueData* pData, int start, int end,int upper,int lower){
+string calc_aimrate(ValueData* pData, int start, int end,double upper,double lower){
 	float aimpoint = 0.0;float totalpoint = 0.0; float rate;
 	for(int i = start;i < end; i++){
 		if((pData[i].data <= upper) && (pData[i].data >= lower)){
@@ -29,6 +29,7 @@ string calc_aimrate(ValueData* pData, int start, int end,int upper,int lower){
 		}
 		totalpoint += 1.0;
 	}
+	
 	rate = aimpoint / totalpoint; rate *= 100.0;
 	stringstream stream;
 	stream << rate;
@@ -143,8 +144,8 @@ void calculate(const char* stat,
 	ValueData* pData,
 	int start, 
 	int end,
-	int upper,
-	int lower, 
+	double upper,
+	double lower, 
 	string &result){
 		if(!strcmp(stat, "aimrate")){
 			result = calc_aimrate(pData, start, end, upper, lower);
@@ -228,7 +229,7 @@ string triple_stat(string dca_name,string signal_cl,string signal_os,string sign
 
 string along_stat(string dca_name,string signal_name,
 	const char* stat, const char* segment,
-	int head_len, int tail_len, int upper ,int lower){
+	int head_len, int tail_len, double upper, double lower){
 		long num;int start; int end;string out;
 		if(!(ReadDCA(dca_name.c_str(), signal_name.c_str(), NULL, &num))){
 			return "";
@@ -237,7 +238,7 @@ string along_stat(string dca_name,string signal_name,
 		ReadDCA(dca_name.c_str(), signal_name.c_str(), pData, &num);
 		seg_select(num, segment, head_len, tail_len, start, end);
 		cout << "start:"<< start << " --- end:"<< end << endl;
-		cout << " --- num:" << num << endl;
+		cout << "length:" << num << endl;
 		calculate(stat, pData, start, end, upper, lower, out);
 		delete [] pData;
 		//cout << out;

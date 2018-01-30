@@ -11,6 +11,6 @@ string triple_stat(string dca_name,string signal_cl,string signal_os,string sign
 
 string along_stat(string dca_name,string signal_name,
 	const char* stat, const char* segment,
-	int head_len, int tail_len, int upper ,int lower);
+	int head_len, int tail_len, double upper ,double lower);
 
 #endif //_CALC_H_
