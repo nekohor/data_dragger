@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
   //string coil_list = "e:/data_inter/yh_data_inter.txt";
   //string result = "e:/data_out/20171106_yh_data.csv";
 
-  string coil_list = "e:/silicon_fb/20180128/data_inter.txt";
-  string result = "e:/silicon_fb/20180128/data_output.csv";
+  string coil_list = "e:/silicon_fb/20180228/data_inter.txt";
+  string result = "e:/silicon_fb/20180228/data_output.csv";
 
   //string coil_list = "e:/yh_fb/20171229/data_inter.txt";
   //string result = "e:/yh_fb/20171229/data_output.csv";
@@ -103,7 +103,23 @@ int main(int argc, char *argv[])
 	//get_pond(coil, "thick_0.05", "thick_clg", "aimrate", "total", 0, 0, -0.05, 0.05, "THICK_0.05_AIMRATE", outfile);
 	////width_0_16_aimrate
 	//get_pond(coil, "width_0_16", "width_flt", "aimrate", "total", 0, 0, 0.0, 16.0, "WIDTH_0_16_AIMRATE", outfile);
-	
+
+	////pos_shft_f1_mean
+	//get_pond(coil, "pos_shft_f1", "shift_f1", "mean", "main", 2, 2, 0.0, 0.0, "POS_SHFT_F1_MEAN", outfile);
+	////pos_shft_f2_mean
+	//get_pond(coil, "pos_shft_f2", "shift_f2", "mean", "main", 2, 2, 0.0, 0.0, "POS_SHFT_F2_MEAN", outfile);
+	////pos_shft_f3_mean
+	//get_pond(coil, "pos_shft_f3", "shift_f3", "mean", "main", 2, 2, 0.0, 0.0, "POS_SHFT_F3_MEAN", outfile);
+	////pos_shft_f4_mean
+	//get_pond(coil, "pos_shft_f4", "shift_f4", "mean", "main", 2, 2, 0.0, 0.0, "POS_SHFT_F4_MEAN", outfile);
+	////pos_shft_f5_mean
+	//get_pond(coil, "pos_shft_f5", "shift_f5", "mean", "main", 2, 2, 0.0, 0.0, "POS_SHFT_F5_MEAN", outfile);
+	////pos_shft_f6_mean
+	//get_pond(coil, "pos_shft_f6", "shift_f6", "mean", "main", 2, 2, 0.0, 0.0, "POS_SHFT_F6_MEAN", outfile);
+	////pos_shft_f7_mean
+	//get_pond(coil, "pos_shft_f7", "shift_f7", "mean", "main", 2, 2, 0.0, 0.0, "POS_SHFT_F7_MEAN", outfile);
+
+
 	// build columns
     if (!init_flag)
     {
