@@ -83,6 +83,7 @@
     <ClInclude Include="config.h" />
     <ClInclude Include="dcafile.h" />
     <ClInclude Include="DCAlib.h" />
+    <ClInclude Include="script.h" />
     <ClInclude Include="signal.h" />
     <ClInclude Include="summary.h" />
   </ItemGroup>
@@ -91,6 +92,7 @@
     <ClCompile Include="config.cpp" />
     <ClCompile Include="dcafile.cpp" />
     <ClCompile Include="pond2.cpp" />
+    <ClCompile Include="script.cpp" />
     <ClCompile Include="signal.cpp" />
     <ClCompile Include="summary.cpp" />
   </ItemGroup>

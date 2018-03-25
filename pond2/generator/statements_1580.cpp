@@ -64,3 +64,49 @@
     get_pond(coil, "pos_shft_f6", "shift_f6", "mean", "main", 2, 2, 0.0, 0.0, "POS_SHFT_F6_MEAN", outfile);
     //pos_shft_f7_mean
     get_pond(coil, "pos_shft_f7", "shift_f7", "mean", "main", 2, 2, 0.0, 0.0, "POS_SHFT_F7_MEAN", outfile);
+    //C25_aimrate
+    get_pond(coil, "C25", "crown_25", "aimrate", "main", 12, 0, 0.0, 0.03, "C25_AIMRATE", outfile);
+    //C40_aimrate
+    get_pond(coil, "C40", "crown_40", "aimrate", "main", 12, 0, 0.005, 0.025, "C40_AIMRATE", outfile);
+    //W40_aimrate
+    get_pond(coil, "W40", "wedge_40", "aimrate", "main", 0, 0, -0.01, 0.01, "W40_AIMRATE", outfile);
+    //C25_C40_aimrate
+    get_pond(coil, "C25_C40", "crown_25", "crown_40", "aimrate", "main", 12, 0, 0.0, 0.007, "C25_C40_AIMRATE", outfile);
+    //C40_C100_aimrate
+    get_pond(coil, "C40_C100", "crown_40", "crown_100", "aimrate", "main", 12, 0, 0.0, 0.005, "C40_C100_AIMRATE", outfile);
+    //head_sym_flt_max
+    get_pond(coil, "head_sym_flt", "flt_ro3", "flt_ro1", "flt_ro5", "max", "head", 150, 0, 0.0, 0.0, "HEAD_SYM_FLT_MAX", outfile);
+    //head_sym_flt_min
+    get_pond(coil, "head_sym_flt", "flt_ro3", "flt_ro1", "flt_ro5", "min", "head", 150, 0, 0.0, 0.0, "HEAD_SYM_FLT_MIN", outfile);
+    //head_sym_flt_mean
+    get_pond(coil, "head_sym_flt", "flt_ro3", "flt_ro1", "flt_ro5", "mean", "head", 150, 0, 0.0, 0.0, "HEAD_SYM_FLT_MEAN", outfile);
+    //main_sym_flt_max
+    get_pond(coil, "main_sym_flt", "flt_ro3", "flt_ro1", "flt_ro5", "max", "main", 150, 100, 0.0, 0.0, "MAIN_SYM_FLT_MAX", outfile);
+    //main_sym_flt_min
+    get_pond(coil, "main_sym_flt", "flt_ro3", "flt_ro1", "flt_ro5", "min", "main", 150, 100, 0.0, 0.0, "MAIN_SYM_FLT_MIN", outfile);
+    //main_sym_flt_mean
+    get_pond(coil, "main_sym_flt", "flt_ro3", "flt_ro1", "flt_ro5", "mean", "main", 150, 100, 0.0, 0.0, "MAIN_SYM_FLT_MEAN", outfile);
+    //tail_sym_flt_max
+    get_pond(coil, "tail_sym_flt", "flt_ro3", "flt_ro1", "flt_ro5", "max", "tail", 0, 100, 0.0, 0.0, "TAIL_SYM_FLT_MAX", outfile);
+    //tail_sym_flt_min
+    get_pond(coil, "tail_sym_flt", "flt_ro3", "flt_ro1", "flt_ro5", "min", "tail", 0, 100, 0.0, 0.0, "TAIL_SYM_FLT_MIN", outfile);
+    //tail_sym_flt_mean
+    get_pond(coil, "tail_sym_flt", "flt_ro3", "flt_ro1", "flt_ro5", "mean", "tail", 0, 100, 0.0, 0.0, "TAIL_SYM_FLT_MEAN", outfile);
+    //head_asym_flt_max
+    get_pond(coil, "head_asym_flt", "flt_ro1", "flt_ro5", "max", "head", 150, 0, 0.0, 0.0, "HEAD_ASYM_FLT_MAX", outfile);
+    //head_asym_flt_min
+    get_pond(coil, "head_asym_flt", "flt_ro1", "flt_ro5", "min", "head", 150, 0, 0.0, 0.0, "HEAD_ASYM_FLT_MIN", outfile);
+    //head_asym_flt_mean
+    get_pond(coil, "head_asym_flt", "flt_ro1", "flt_ro5", "mean", "head", 150, 0, 0.0, 0.0, "HEAD_ASYM_FLT_MEAN", outfile);
+    //main_asym_flt_max
+    get_pond(coil, "main_asym_flt", "flt_ro1", "flt_ro5", "max", "main", 150, 100, 0.0, 0.0, "MAIN_ASYM_FLT_MAX", outfile);
+    //main_asym_flt_min
+    get_pond(coil, "main_asym_flt", "flt_ro1", "flt_ro5", "min", "main", 150, 100, 0.0, 0.0, "MAIN_ASYM_FLT_MIN", outfile);
+    //main_asym_flt_mean
+    get_pond(coil, "main_asym_flt", "flt_ro1", "flt_ro5", "mean", "main", 150, 100, 0.0, 0.0, "MAIN_ASYM_FLT_MEAN", outfile);
+    //tail_asym_flt_max
+    get_pond(coil, "tail_asym_flt", "flt_ro1", "flt_ro5", "max", "tail", 0, 100, 0.0, 0.0, "TAIL_ASYM_FLT_MAX", outfile);
+    //tail_asym_flt_min
+    get_pond(coil, "tail_asym_flt", "flt_ro1", "flt_ro5", "min", "tail", 0, 100, 0.0, 0.0, "TAIL_ASYM_FLT_MIN", outfile);
+    //tail_asym_flt_mean
+    get_pond(coil, "tail_asym_flt", "flt_ro1", "flt_ro5", "mean", "tail", 0, 100, 0.0, 0.0, "TAIL_ASYM_FLT_MEAN", outfile);

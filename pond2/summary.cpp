@@ -21,6 +21,7 @@ int get_line(){
 void coil_id(string& coil,ofstream &outfile){
 	string coilname = coil.substr(coil.find_last_of('/') + 1,
 		coil.length() - coil.find_last_of('/'));
+	cout << endl;
 	cout << coilname << ",";
 	outfile << coilname << ",";
 	//string get_millline_head = coilname.substr(0,1);

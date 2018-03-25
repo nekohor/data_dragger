@@ -33,6 +33,9 @@
     <ClInclude Include="summary.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="script.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pond2.cpp">
@@ -51,6 +54,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="summary.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="script.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
