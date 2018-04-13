@@ -27,10 +27,28 @@ const char* get_dca_name(int line, const char* part)
         if(!strcmp(part, "width_mfg")){
             return "MFG";
         }
+        if(!strcmp(part, "wedge_25")){
+            return "MFG";
+        }
+        if(!strcmp(part, "crown_25")){
+            return "MFG";
+        }
         if(!strcmp(part, "wedge_40")){
             return "MFG";
         }
         if(!strcmp(part, "crown_40")){
+            return "MFG";
+        }
+        if(!strcmp(part, "wedge_70")){
+            return "MFG";
+        }
+        if(!strcmp(part, "crown_70")){
+            return "MFG";
+        }
+        if(!strcmp(part, "wedge_100")){
+            return "MFG";
+        }
+        if(!strcmp(part, "crown_100")){
             return "MFG";
         }
         if(!strcmp(part, "shift_f1")){
@@ -89,6 +107,18 @@ const char* get_dca_name(int line, const char* part)
         }
         if(!strcmp(part, "r2dt")){
             return "R2DT";
+        }
+        if(!strcmp(part, "r2_center_ofs")){
+            return "R2DW";
+        }
+        if(!strcmp(part, "ct")){
+            return "CT";
+        }
+        if(!strcmp(part, "fdt")){
+            return "FDT";
+        }
+        if(!strcmp(part, "speed7")){
+            return "F7";
         }
     }
     if(line == 2250){
@@ -101,10 +131,28 @@ const char* get_dca_name(int line, const char* part)
         if(!strcmp(part, "width_mfg")){
             return "MFG";
         }
+        if(!strcmp(part, "wedge_25")){
+            return "MFG";
+        }
+        if(!strcmp(part, "crown_25")){
+            return "MFG";
+        }
         if(!strcmp(part, "wedge_40")){
             return "MFG";
         }
         if(!strcmp(part, "crown_40")){
+            return "MFG";
+        }
+        if(!strcmp(part, "wedge_70")){
+            return "MFG";
+        }
+        if(!strcmp(part, "crown_70")){
+            return "MFG";
+        }
+        if(!strcmp(part, "wedge_100")){
+            return "MFG";
+        }
+        if(!strcmp(part, "crown_100")){
             return "MFG";
         }
         if(!strcmp(part, "shift_f1")){
@@ -163,6 +211,18 @@ const char* get_dca_name(int line, const char* part)
         }
         if(!strcmp(part, "r2dt")){
             return "R2DT";
+        }
+        if(!strcmp(part, "r2_center_ofs")){
+            return "R2DW";
+        }
+        if(!strcmp(part, "ct")){
+            return "CT";
+        }
+        if(!strcmp(part, "fdt")){
+            return "FDT";
+        }
+        if(!strcmp(part, "speed7")){
+            return "F7";
         }
     }
     cerr << "Nothing meet dcafile name" << endl;

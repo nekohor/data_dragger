@@ -26,11 +26,29 @@ const char* get_sig_name(int line, const char* part)
         if(!strcmp(part, "width_mfg")){
             return "TN\\L2_CF_F7XWIDDEVMFG";
         }
+        if(!strcmp(part, "wedge_25")){
+            return "PR\\FM_DEL_WEDGE25";
+        }
+        if(!strcmp(part, "crown_25")){
+            return "PR\\FM_DEL_CROWN25";
+        }
         if(!strcmp(part, "wedge_40")){
             return "PR\\FM_DEL_WEDGE40";
         }
         if(!strcmp(part, "crown_40")){
             return "PR\\FM_DEL_CROWN40";
+        }
+        if(!strcmp(part, "wedge_70")){
+            return "PR\\FM_DEL_WEDGE70";
+        }
+        if(!strcmp(part, "crown_70")){
+            return "PR\\FM_DEL_CROWN70";
+        }
+        if(!strcmp(part, "wedge_100")){
+            return "PR\\FM_DEL_WEDGE100";
+        }
+        if(!strcmp(part, "crown_100")){
+            return "PR\\FM_DEL_CROWN100";
         }
         if(!strcmp(part, "shift_f1")){
             return "TN\\L2_CF_F1WRSTPOSFBK";
@@ -89,6 +107,18 @@ const char* get_sig_name(int line, const char* part)
         if(!strcmp(part, "r2dt")){
             return "TN\\L2_R2_R2DTTEMP";
         }
+        if(!strcmp(part, "r2_center_ofs")){
+            return "TN\\L2_R2_R2XCENTOFS";
+        }
+        if(!strcmp(part, "ct")){
+            return "TN\\L2_ROT_CTTMP";
+        }
+        if(!strcmp(part, "fdt")){
+            return "TN\\L2_FA_FDTTEMP";
+        }
+        if(!strcmp(part, "speed7")){
+            return "TN\\L2_FM_F7_SFB";
+        }
     }
     if(line == 2250){
         if(!strcmp(part, "thick_clg")){
@@ -100,11 +130,29 @@ const char* get_sig_name(int line, const char* part)
         if(!strcmp(part, "width_mfg")){
             return "TN\\L_FA_F7XWIDDEVMFG";
         }
+        if(!strcmp(part, "wedge_25")){
+            return "L2\\FMX_MFT_PROFB_WEDGE1";
+        }
+        if(!strcmp(part, "crown_25")){
+            return "L2\\FMX_MFT_PROFB_CROWN1";
+        }
         if(!strcmp(part, "wedge_40")){
             return "L2\\FMX_MFT_PROFB_WEDGE2";
         }
         if(!strcmp(part, "crown_40")){
             return "L2\\FMX_MFT_PROFB_CROWN2";
+        }
+        if(!strcmp(part, "wedge_70")){
+            return "L2\\FMX_MFT_PROFB_WEDGE3";
+        }
+        if(!strcmp(part, "crown_70")){
+            return "L2\\FMX_MFT_PROFB_CROWN3";
+        }
+        if(!strcmp(part, "wedge_100")){
+            return "L2\\FMX_MFT_PROFB_WEDGE4";
+        }
+        if(!strcmp(part, "crown_100")){
+            return "L2\\FMX_MFT_PROFB_CROWN4";
         }
         if(!strcmp(part, "shift_f1")){
             return "TN\\L_CF_F1WRSTPOSFBK";
@@ -162,6 +210,18 @@ const char* get_sig_name(int line, const char* part)
         }
         if(!strcmp(part, "r2dt")){
             return "TN\\L_R2_R2DT1TEMP";
+        }
+        if(!strcmp(part, "r2_center_ofs")){
+            return "TN\\L_R2_R2XCENTOFS";
+        }
+        if(!strcmp(part, "ct")){
+            return "TN\\L_ROT_CT1TEMP";
+        }
+        if(!strcmp(part, "fdt")){
+            return "TN\\L_FA_FDT1TEMP";
+        }
+        if(!strcmp(part, "speed7")){
+            return "TN\\L_FM_F7_SFB";
         }
     }
     cerr << "Nothing meet signal name" << endl;

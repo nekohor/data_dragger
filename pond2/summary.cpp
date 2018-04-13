@@ -8,14 +8,14 @@ using namespace std;
 #include "dcafile.h"
 #include "signal.h"
 #include "calc.h"
-
+#include "config.h"
 
 string header;
 
 
-int get_line(){
-	return 1580;
-}
+//int get_line(){
+//	return ____;
+//}
 
 
 void coil_id(string& coil,ofstream &outfile){

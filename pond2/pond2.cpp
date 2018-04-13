@@ -19,16 +19,16 @@ int main(int argc, char *argv[])
   //string result = "e:/data_out/20171106_yh_data.csv";
 
   // --- silicon feedback ---
-  string coil_list = "e:/silicon_fb/20180321/data_inter.txt";
-  string result = "e:/silicon_fb/20180321/data_output.csv";
+  string coil_list = "e:/silicon_fb/20180410/data_inter.txt";
+  string result = "e:/silicon_fb/20180410/data_output.csv";
 
-  // --- yehui feedback ---
+  // --- yehui feedback --- 
   //string coil_list = "e:/yh_fb/20171229/data_inter.txt";
   //string result = "e:/yh_fb/20171229/data_output.csv";
 
   // --- luna stat --- 
-  //string coil_list = "e:/dca_inter/dca_data_2250_201801_inter.txt";
-  //string result = "e:/dca_output/dca_data_2250_201801.csv";
+  //string coil_list = "e:/dca_inter/dcadata_inter_2250_201712to201802.txt";
+  //string result = "e:/dca_output/dca_data_2250_201712to201802_flt.csv";
 
   // setup data(1580 or 2250)
   //int mill_line = 2250/1580;
@@ -52,16 +52,20 @@ int main(int argc, char *argv[])
     coil_id(coil, outfile);
 
     // normal procedure
+	//cout << "" << endl;
+	//outfile << "" << endl;
     //getline(infile,coil);
 
     // different demand (from script.h)
 	// ===================================================================
     //get_pond(coil, "thick", "thick_clg","all", "total",0,0,0,0,"THK_CLG", outfile);
     get_pond(coil, "wedge", "wedge_40", "all", "total", 0, 0, 0, 0, "wedge", outfile);
-	/*thk_wid_aimrate(coil, outfile);
-	pos_shft_stat(coil, outfile);
-	flat_stat(coil, outfile);*/
+	//thk_wid_aimrate(coil, outfile);
+	//pos_shft_stat(coil, outfile);
+	//flat_stat(coil, outfile);
+	//flatness_aimrate(coil, outfile);
 
+	//temp_related(coil,outfile);
 	// ===================================================================
 
 	// build columns
